@@ -5,7 +5,7 @@ body{
 /* Header */
 #header{
     background: url("../img/head.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .logo img{
@@ -54,10 +54,50 @@ nav{
     margin-left: 0;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: none;
+    float: right;
+}
+
+.sidenav-photo{
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 /* Banner */
 #banner{
     background: url("../img/banner.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .banner-item{
@@ -103,7 +143,7 @@ nav{
 /* Hot */
 #hot{
     background: url("../img/sct.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .items{
@@ -137,4 +177,134 @@ nav{
     text-align: center;
     color: #D9BB84;
     font-size: 20px;
+}
+
+/* Categories */
+#categories{
+    background: url("../img/sct2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.categories-item{
+    margin-top: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.categories-item img{
+    width: 130px;
+    align-items: center;
+}
+
+.categories-item p{
+    color: #232426;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* About */
+
+#about{
+    position: relative;
+    background: url("../img/sct.jpg") no-repeat;
+    background-size: cover;
+}
+.about{
+    position: relative;
+    text-align: center;
+}
+
+.about-title{
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #D9BB84;
+}
+
+.about p{
+    margin-top: 25px;
+    font-size: 24px;
+    color: #D9BB84;
+    padding-bottom: 55px;
+}
+
+/* Footer */
+#footer{
+    background: url("../img/sct2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.foot-item p{
+    text-align: center;
+    width: 350px;
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.foot-item img{
+    width: 300px;
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 1200px){
+    .block img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .our-item1 h2{
+        margin-top: 0;
+    }
+    .sidenav{
+        position: relative;
+    }
+    .sidenav-photo{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+    .nav{
+        display: none;
+        background-color: transparent;
+    }
+    .block{
+        margin-left: 0;
+    }
+    .block img{
+        margin-left: 30%;
+    }
+    .product{
+        justify-content: center;
+    }
+    .banner-item h1{
+        width: auto;
+    }
+    .banner-item p{
+        width: auto;
+    }
+
+    .social-media{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
