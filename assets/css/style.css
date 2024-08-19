@@ -5,7 +5,7 @@ body{
 /* Header */
 #header{
     background: url("../img/head.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .logo img{
@@ -57,7 +57,7 @@ nav{
 /* Banner */
 #banner{
     background: url("../img/banner.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .banner-item{
@@ -103,7 +103,7 @@ nav{
 /* Hot */
 #hot{
     background: url("../img/sct.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .items{
@@ -137,4 +137,84 @@ nav{
     text-align: center;
     color: #D9BB84;
     font-size: 20px;
+}
+
+/* Categories */
+#categories{
+    background: url("../img/sct2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.categories-item{
+    margin-top: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.categories-item img{
+    width: 130px;
+    align-items: center;
+}
+
+.categories-item p{
+    color: #232426;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* About */
+
+#about{
+    position: relative;
+    background: url("../img/sct.jpg") no-repeat;
+    background-size: cover;
+}
+.about{
+    position: relative;
+    text-align: center;
+}
+
+.about-title{
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #D9BB84;
+}
+
+.about p{
+    margin-top: 25px;
+    font-size: 24px;
+    color: #D9BB84;
+    padding-bottom: 55px;
+}
+
+/* Footer */
+#footer{
+    background: url("../img/sct2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.foot-item p{
+    text-align: center;
+    width: 350px;
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.foot-item img{
+    width: 300px;
+    margin-left: 20%;
 }
