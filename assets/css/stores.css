@@ -141,13 +141,25 @@ nav{
     color: black;
 }
 
+/* Footer */
+#footer{
+    background: url("../img/sct2.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
 
+.foot-item p{
+    text-align: center;
+    width: 350px;
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-
-
-
-
-
+.foot-item img{
+    width: 300px;
+    margin-left: 20%;
+}
 
 @media screen and (max-width: 1200px){
     .block img{
