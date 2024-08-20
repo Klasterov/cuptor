@@ -2,3 +2,206 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
+
+
+#principal{
+    background: url("../img/sct.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo img{
+    width: 200px;
+}
+nav{
+    margin-top: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background: #D9BB84;
+    height: 40px;
+    margin-right: 0;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-item{
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.nav-item:first-child{
+    margin-left: 40px;
+}
+
+.social-media{
+    display: flex;
+}
+.social-media a{
+    margin-left: 15px;
+}
+
+.social-media  img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.social-media a:first-child{
+    margin-left: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: none;
+    float: right;
+}
+
+.sidenav-photo{
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.info h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #D9BB84;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.info iframe{
+    border-radius: 150px 150px 0 150px;
+    margin-bottom: 30px;
+}
+
+.info-item1{
+    text-align: center;
+    background-color: #D9BB84;
+    border-radius: 100px 40px 100px 40px;
+    margin-bottom: 20px;
+}
+
+.info-item2{
+    text-align: center;
+}
+
+.info-item2 button{
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 30px 60px 30px 60px;
+    border: 1px solid black;
+    border-radius: 100px 40px 100px 40px;
+    background-color: #C58E2A;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-item2 button > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .block img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .info-item2 button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .our-item1 h2{
+        margin-top: 0;
+    }
+    .sidenav{
+        position: relative;
+    }
+    .sidenav-photo{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+    .nav{
+        display: none;
+        background-color: transparent;
+    }
+    .block{
+        margin-left: 0;
+    }
+    .block img{
+        margin-left: 30%;
+    }
+    .product{
+        justify-content: center;
+    }
+    .banner-item h1{
+        width: auto;
+    }
+    .banner-item p{
+        width: auto;
+    }
+
+    .social-media{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
