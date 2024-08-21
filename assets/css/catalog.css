@@ -7,15 +7,54 @@
     background-size: cover;
 }
 
-.card{
-    margin: 20px 20px 20px 0;
-    align-items: center;
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-item {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
+    background: white;
+    transition: .4s linear;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.product-item:hover {
+    border-bottom: 2px solid #fc5a5a;
+}
+.product-item:hover .button {
+    background: #C58E2A;
+}
+.product-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+    margin: 0 auto;
+}
+.product-list {
+    padding: 15px 0;
+}
+.product-list h3 {
+    font-size: 18px;
+    color: #444444;
+    margin: 0 0 10px 0;
+    font-weight: bold;
 }
 
-.btn{
+.button {
+    display: inline-block;
+    padding: 1px 12px 0;
+    margin: 0 auto;
+    background: #cccccc;
+    color: white;
     text-transform: uppercase;
-}
-
-.btn-primary{
-    background-color: #C58E2A;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 28px;
+    transition: .4s linear
 }
