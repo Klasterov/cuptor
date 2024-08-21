@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+#catalog{
+    background: url("../img/sct2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.card{
+    margin: 20px 20px 20px 0;
+    align-items: center;
+}
+
+.btn{
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background-color: #C58E2A;
+}
