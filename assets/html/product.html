@@ -5,9 +5,81 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <title>Document</title>
 </head>
 <body>
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-3 mb-3 logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="col-md-7 mt-5 nav">
+                <nav>
+                    <a href="#" class="nav-item">catalogul de produse</a>
+                    <a href="../html/stores.html" class="nav-item">MAGAZINELE DE SPECIALITATE</a>
+                    <a href="#" class="nav-item">NOUTĂȚI</a>
+                    <a href="#" class="nav-item">CONTACT</a>
+                </nav>
+            </div>
+            <div class="col-md-1 social-media mt-5">
+                <a href="#"><img src="../img/facebook-logo.png" alt=""></a>
+                <a href=""><img src="../img/instagram.png" alt=""></a>
+                <a href=""><img src="../img/vk.png" alt=""></a>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <span onclick="openNav()" style="cursor: pointer;"><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width="40px" class="sidenav-photo"></span>
 
+        </div>
+    </div>
+</header>
+
+<section id="product">
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-img">
+                <img src="../img/tort.png" height="420" width="327">
+            </div>
+            <div class="product-info">
+                <div class="product-text">
+                    <h1>Harvest Vase</h1>
+                    <h2>by studio and friends</h2>
+                    <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+                </div>
+                <div class="product-price-btn">
+                    <p><span>78</span>$</p>
+                    <button type="button">buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 foot-item mt-5">
+                <p>Moldova, mun. Bălți, str. Bulgară 55 tel: 0231 7-67-98</p>
+            </div>
+            <div class="col-md-4 foot-item">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="col-md-4 foot-item mt-3">
+                <p> „Savurați dulciurile noastre premium – fiecare gustare este o mică bucurie!”</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>
