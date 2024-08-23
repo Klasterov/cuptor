@@ -1,8 +1,9 @@
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "500px";
-    console.log(1)
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+
+
+var burgerMenu = document.getElementById('burger-menu');
+var overlay = document.getElementById('menu');
+burgerMenu.addEventListener('click',function(){
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+});
