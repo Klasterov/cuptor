@@ -1,0 +1,41 @@
+#news{
+    background: url("../img/sct.jpg") no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 350px;
+    border: 1px solid lightslategrey;
+    box-shadow: 1px 1px 3px #888;
+    border-top: 10px solid green;
+    min-height: 250px;
+    padding: -10px;
+    margin: 10px;
+
+}
+
+img{
+    border-radius: 50%;
+    width: 70px;
+    margin: 10px;
+}
+
+h1{
+    font-weight: lighter;
+
+
+    text-align: center;
+}
+
+p{
+    margin: 10px;
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+
+#mainbox{
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
