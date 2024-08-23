@@ -1,0 +1,16 @@
+#contact{
+    background: url("../img/sct.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bg-image {
+    background-image: url('../img/banner.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
